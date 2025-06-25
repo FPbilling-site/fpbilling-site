@@ -12,21 +12,20 @@
 <body class="bg-white text-gray-800 font-sans">
 
   <!-- 🌟 Navigation -->
-<header class="shadow-md fixed top-0 left-0 w-full z-50 bg-white">
-  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-    <div class="text-2xl font-bold text-[#003366] tracking-wide">FP Billing</div>
-    <nav class="space-x-6 hidden md:flex text-[#003366] font-medium">
-      <a href="#home" class="hover:text-[#00cc99] transition">Home</a>
-      <a href="#about" class="hover:text-[#00cc99] transition">About</a>
-      <a href="#services" class="hover:text-[#00cc99] transition">Services</a>
-      <a href="#contact" class="hover:text-[#00cc99] transition">Contact</a>
-    </nav>
-  </div>
-</header>
-
+  <header class="shadow-md fixed top-0 left-0 w-full z-50 bg-white">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="text-2xl font-bold text-[#003366] tracking-wide">FP Billing</div>
+      <nav class="space-x-6 hidden md:flex text-[#003366] font-medium">
+        <a href="#home" class="hover:text-[#00cc99] transition">Home</a>
+        <a href="#about" class="hover:text-[#00cc99] transition">About</a>
+        <a href="#services" class="hover:text-[#00cc99] transition">Services</a>
+        <a href="#contact" class="hover:text-[#00cc99] transition">Contact</a>
+      </nav>
+    </div>
+  </header>
 
   <!-- 🎯 Hero Section -->
-  <section class="bg-[#003366] text-white py-24 px-6 text-center">
+  <section id="home" class="bg-[#003366] text-white py-24 px-6 text-center">
     <h2 class="text-4xl md:text-5xl font-bold mb-4 leading-tight fade-up typewriter-text">
       Get Paid What You Deserve — Without the HMO Headaches
     </h2>
@@ -39,7 +38,7 @@
   </section>
 
   <!-- ❌ Pain Points -->
-  <section class="py-20 px-6 bg-white text-center fade-up">
+  <section id="about" class="py-20 px-6 bg-white text-center fade-up">
     <h3 class="text-2xl md:text-3xl font-bold text-[#003366] mb-8">
       Still Losing Money on Denials, TARs, or Delayed Payments?
     </h3>
@@ -52,7 +51,7 @@
   </section>
 
   <!-- ✅ What We Do -->
-  <section class="py-20 px-6 bg-gray-50 text-center">
+  <section id="services" class="py-20 px-6 bg-gray-50 text-center">
     <h3 class="text-3xl font-bold text-[#003366] mb-12 fade-up">What We Do Best</h3>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
       <div class="bg-white p-6 shadow-md border-l-4 border-[#00cc99] text-left rounded-md hover-zoom">✔️ Home Health HMO Billing (Kaiser, SCAN, IEHP, etc.)</div>
@@ -63,24 +62,24 @@
     </div>
   </section>
 
-<!-- 📊 Updated Swiper Impact Section -->
-<section class="impact-section bg-white py-24 px-6 text-center">
-  <h2 class="impact-title text-3xl md:text-4xl font-bold text-[#003366] mb-12 fade-up">Real Impact for Real Agencies</h2>
-  <div class="swiper impactSwiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide impact-card">+ $18,000 recovered from SCAN denials in 30 days.</div>
-      <div class="swiper-slide impact-card">Kaiser denials reduced from 22% → 3% in 90 days.</div>
-      <div class="swiper-slide impact-card">30+ active authorizations tracked with 0 expirations.</div>
-      <div class="swiper-slide impact-card">Turnaround time cut from 75 to 28 days for AR claims.</div>
-      <div class="swiper-slide impact-card">$12M+ annual billing handled for one HHA client.</div>
-      <div class="swiper-slide impact-card">IEHP/SCAN crossover claims successfully recovered.</div>
-      <div class="swiper-slide impact-card">Zero upfront cost — we only get paid when you do.</div>
-      <div class="swiper-slide impact-card">Daily TAR alerts across 100+ home health patients.</div>
-      <div class="swiper-slide impact-card">98% denial resubmission success rate.</div>
+  <!-- 📊 Updated Swiper Impact Section -->
+  <section class="impact-section bg-white py-24 px-6 text-center">
+    <h2 class="impact-title text-3xl md:text-4xl font-bold text-[#003366] mb-12 fade-up">Real Impact for Real Agencies</h2>
+    <div class="swiper impactSwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide impact-card">+ $18,000 recovered from SCAN denials in 30 days.</div>
+        <div class="swiper-slide impact-card">Kaiser denials reduced from 22% → 3% in 90 days.</div>
+        <div class="swiper-slide impact-card">30+ active authorizations tracked with 0 expirations.</div>
+        <div class="swiper-slide impact-card">Turnaround time cut from 75 to 28 days for AR claims.</div>
+        <div class="swiper-slide impact-card">$12M+ annual billing handled for one HHA client.</div>
+        <div class="swiper-slide impact-card">IEHP/SCAN crossover claims successfully recovered.</div>
+        <div class="swiper-slide impact-card">Zero upfront cost — we only get paid when you do.</div>
+        <div class="swiper-slide impact-card">Daily TAR alerts across 100+ home health patients.</div>
+        <div class="swiper-slide impact-card">98% denial resubmission success rate.</div>
+      </div>
+      <div class="swiper-pagination mt-8"></div>
     </div>
-    <div class="swiper-pagination mt-8"></div>
-  </div>
-</section>
+  </section>
 
   <!-- 🙌 Why FP Billing -->
   <section class="py-20 px-6 bg-gray-50 text-center">
@@ -94,7 +93,7 @@
   </section>
 
   <!-- 💬 Final CTA -->
-  <section class="py-24 px-6 bg-[#003366] text-white text-center">
+  <section id="contact" class="py-24 px-6 bg-[#003366] text-white text-center">
     <h3 class="text-4xl font-bold mb-6 fade-up">Let’s Find the Revenue You’re Missing</h3>
     <p class="text-lg mb-6 max-w-xl mx-auto fade-up">We’ll audit 10 of your HMO claims for free and show you exactly where money is being lost — and how we’d fix it.</p>
     <a href="free-audit.html" class="bg-[#00cc99] px-6 py-3 text-lg font-semibold rounded hover:bg-[#009977] transition">Book My Free 10-Claim Audit</a>
@@ -105,31 +104,31 @@
     &copy; 2025 FP Billing Services. All rights reserved.
   </footer>
 
-<!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script>
-  const swiper = new Swiper('.impactSwiper', {
-    loop: true,
-    autoplay: {
-      delay: 4000,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    slidesPerView: 1,
-    spaceBetween: 20,
-    breakpoints: {
-      768: {
-        slidesPerView: 2,
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.impactSwiper', {
+      loop: true,
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
       },
-      1024: {
-        slidesPerView: 3,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
       },
-    },
-  });
-</script>
+      slidesPerView: 1,
+      spaceBetween: 20,
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 3,
+        },
+      },
+    });
+  </script>
 
 </body>
 </html>
