@@ -141,6 +141,30 @@ footer {
   background-color: #00cc99;
 }
 
+.impact-grid {
+  display: grid;
+  gap: 2rem;
+  margin-top: 20px;
+}
+
+.impact-card {
+  background-color: #f2fdfb;
+  border-left: 5px solid #00cc99;
+  padding: 24px;
+  font-size: 1.1rem;
+  color: #003366;
+  border-radius: 10px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+.impact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.12);
+}
+
+
 /* 📱 Mobile Responsiveness */
 @media (max-width: 768px) {
   nav {
