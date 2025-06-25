@@ -6,11 +6,31 @@
   <title>FP Billing Services | HMO Billing Experts for Home Health</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="icon" href="favicon.ico" />
+  <style>
+    @keyframes fadeUp {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    .fade-up {
+      animation: fadeUp 0.8s ease-out forwards;
+    }
+    .hover-zoom:hover {
+      transform: scale(1.03);
+      transition: transform 0.3s ease;
+    }
+    .typewriter-text::after {
+      content: '|';
+      animation: blink 0.8s step-start infinite;
+    }
+    @keyframes blink {
+      50% { opacity: 0; }
+    }
+  </style>
 </head>
 <body class="bg-white text-gray-800 font-sans">
 
   <!-- 🌟 Navigation -->
-  <header class="bg-white shadow-md sticky top-0 z-50">
+  <header class="bg-white shadow-md sticky top-0 z-50 fade-up">
     <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
       <h1 class="text-2xl font-bold text-[#003366]">FP Billing</h1>
       <nav class="space-x-6 text-sm font-semibold text-gray-700">
@@ -25,13 +45,13 @@
 
   <!-- 🎯 Hero Section -->
   <section class="bg-[#003366] text-white py-24 px-6 text-center">
-    <h2 class="text-4xl md:text-5xl font-bold mb-4 leading-tight">Get Paid What You Deserve — Without the HMO Headaches</h2>
-    <p class="max-w-xl mx-auto text-lg mb-8">We help home health agencies collect faster, reduce denials, and streamline their billing — with zero upfront cost.</p>
+    <h2 class="text-4xl md:text-5xl font-bold mb-4 leading-tight fade-up typewriter-text">Get Paid What You Deserve — Without the HMO Headaches</h2>
+    <p class="max-w-xl mx-auto text-lg mb-8 fade-up">We help home health agencies collect faster, reduce denials, and streamline their billing — with zero upfront cost.</p>
     <a href="free-audit.html" class="bg-[#00cc99] px-6 py-3 text-lg font-semibold rounded hover:bg-[#009977] transition">Request Free 10‑Claim Audit</a>
   </section>
 
   <!-- ❌ Pain Points -->
-  <section class="py-20 px-6 bg-white text-center">
+  <section class="py-20 px-6 bg-white text-center fade-up">
     <h3 class="text-2xl md:text-3xl font-bold text-[#003366] mb-8">Still Losing Money on Denials, TARs, or Delayed Payments?</h3>
     <ul class="max-w-2xl mx-auto text-left space-y-4 text-lg">
       <li>❌ 20–30% of revenue lost due to preventable billing errors</li>
@@ -43,29 +63,29 @@
 
   <!-- ✅ What We Do -->
   <section class="py-20 px-6 bg-gray-50 text-center">
-    <h3 class="text-3xl font-bold text-[#003366] mb-12">What We Do Best</h3>
+    <h3 class="text-3xl font-bold text-[#003366] mb-12 fade-up">What We Do Best</h3>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
-      <div class="bg-white p-6 shadow-md border-l-4 border-[#00cc99] text-left rounded-md">✔️ Home Health HMO Billing (Kaiser, SCAN, IEHP, etc.)</div>
-      <div class="bg-white p-6 shadow-md border-l-4 border-[#00cc99] text-left rounded-md">✔️ Authorization Tracking + Expiration Alerts</div>
-      <div class="bg-white p-6 shadow-md border-l-4 border-[#00cc99] text-left rounded-md">✔️ AR Cleanup & Denial Resubmission</div>
-      <div class="bg-white p-6 shadow-md border-l-4 border-[#00cc99] text-left rounded-md">✔️ Weekly Custom Denial Reporting</div>
-      <div class="bg-white p-6 shadow-md border-l-4 border-[#00cc99] text-left rounded-md">✔️ Seamless Claims Submission + Appeals</div>
+      <div class="bg-white p-6 shadow-md border-l-4 border-[#00cc99] text-left rounded-md hover-zoom">✔️ Home Health HMO Billing (Kaiser, SCAN, IEHP, etc.)</div>
+      <div class="bg-white p-6 shadow-md border-l-4 border-[#00cc99] text-left rounded-md hover-zoom">✔️ Authorization Tracking + Expiration Alerts</div>
+      <div class="bg-white p-6 shadow-md border-l-4 border-[#00cc99] text-left rounded-md hover-zoom">✔️ AR Cleanup & Denial Resubmission</div>
+      <div class="bg-white p-6 shadow-md border-l-4 border-[#00cc99] text-left rounded-md hover-zoom">✔️ Weekly Custom Denial Reporting</div>
+      <div class="bg-white p-6 shadow-md border-l-4 border-[#00cc99] text-left rounded-md hover-zoom">✔️ Seamless Claims Submission + Appeals</div>
     </div>
   </section>
 
   <!-- 📈 Results Section -->
   <section class="py-20 px-6 bg-white text-center">
-    <h3 class="text-3xl font-bold text-[#003366] mb-10">Our Clients See Real Results</h3>
+    <h3 class="text-3xl font-bold text-[#003366] mb-10 fade-up">Our Clients See Real Results</h3>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-      <div class="bg-[#e6f9f5] p-6 rounded shadow">
+      <div class="bg-[#e6f9f5] p-6 rounded shadow hover-zoom">
         <p class="text-xl font-bold">+$18,000</p>
         <p class="text-sm">Recovered from denied SCAN claims in 30 days</p>
       </div>
-      <div class="bg-[#e6f9f5] p-6 rounded shadow">
+      <div class="bg-[#e6f9f5] p-6 rounded shadow hover-zoom">
         <p class="text-xl font-bold">19% ↓ Denial Rate</p>
         <p class="text-sm">Kaiser denials dropped from 22% to 3% in 90 days</p>
       </div>
-      <div class="bg-[#e6f9f5] p-6 rounded shadow">
+      <div class="bg-[#e6f9f5] p-6 rounded shadow hover-zoom">
         <p class="text-xl font-bold">$12M+</p>
         <p class="text-sm">Billed annually by just one of our top agencies</p>
       </div>
@@ -74,7 +94,7 @@
 
   <!-- 🙌 Why FP Billing -->
   <section class="py-20 px-6 bg-gray-50 text-center">
-    <h3 class="text-3xl font-bold text-[#003366] mb-10">Why Home Health Agencies Choose Us</h3>
+    <h3 class="text-3xl font-bold text-[#003366] mb-10 fade-up">Why Home Health Agencies Choose Us</h3>
     <ul class="max-w-3xl mx-auto text-left space-y-5 text-lg">
       <li>✅ We specialize in HMO billing — not general medical billing</li>
       <li>✅ Our team tracks authorizations, TARs, expirations daily</li>
@@ -85,8 +105,8 @@
 
   <!-- 💬 Final CTA -->
   <section class="py-24 px-6 bg-[#003366] text-white text-center">
-    <h3 class="text-4xl font-bold mb-6">Let’s Find the Revenue You’re Missing</h3>
-    <p class="text-lg mb-6 max-w-xl mx-auto">We’ll audit 10 of your HMO claims for free and show you exactly where money is being lost — and how we’d fix it.</p>
+    <h3 class="text-4xl font-bold mb-6 fade-up">Let’s Find the Revenue You’re Missing</h3>
+    <p class="text-lg mb-6 max-w-xl mx-auto fade-up">We’ll audit 10 of your HMO claims for free and show you exactly where money is being lost — and how we’d fix it.</p>
     <a href="free-audit.html" class="bg-[#00cc99] px-6 py-3 text-lg font-semibold rounded hover:bg-[#009977] transition">Book My Free 10-Claim Audit</a>
   </section>
 
