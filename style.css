@@ -1,50 +1,76 @@
+/* 🌐 Base Styles */
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f8f9fb;
   color: #333;
+  line-height: 1.6;
 }
-header {
+
+a {
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  opacity: 0.85;
+}
+
+header, footer {
   background-color: #003366;
   color: white;
-  padding: 20px;
   text-align: center;
 }
+
+header {
+  padding: 20px;
+}
+
 nav a {
-  margin: 0 10px;
+  margin: 0 15px;
   color: white;
   text-decoration: none;
+  font-weight: 600;
 }
+
+/* ✍️ Main Content */
 main {
-  padding: 40px 20px;
+  padding: 60px 20px;
 }
+
+/* 🦶 Footer */
 footer {
-  background-color: #003366;
-  color: white;
-  padding: 10px;
-  text-align: center;
+  padding: 20px;
+  font-size: 14px;
 }
+
+/* 🟢 CTA Button */
 .cta-button {
   display: inline-block;
   margin-top: 20px;
-  padding: 10px 20px;
+  padding: 12px 28px;
   background-color: #00cc99;
   color: white;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background 0.3s ease;
 }
 
-/* 🔠 Typewriter effect */
+.cta-button:hover {
+  background-color: #009977;
+}
+
+/* 🔠 Typewriter Effect */
 .typewriter {
   overflow: hidden;
-  border-right: .15em solid #0074a6;
+  border-right: .15em solid #00cc99;
   white-space: nowrap;
   margin: 0 auto 20px;
   letter-spacing: .05em;
   animation: typing 2.5s steps(30, end), blink-caret .75s step-end infinite;
-  font-size: 1.8rem;
-  color: #0074a6;
+  font-size: 2rem;
+  color: #00cc99;
   text-align: center;
 }
 
@@ -54,45 +80,35 @@ footer {
 }
 
 @keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: #0074a6 }
+  50% { border-color: transparent; }
 }
 
-/* ✨ Slide in animation */
-.animated-section {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+/* 💨 Slide In Animation */
+.fade-up {
   opacity: 0;
   transform: translateY(40px);
-  animation: slideInUp 1.2s ease-out forwards;
-  animation-delay: 2.6s;
+  animation: fadeUp 0.9s ease forwards;
 }
 
-/* Triggered when scrolled into view */
-.animated-section.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-@keyframes slideInUp {
+@keyframes fadeUp {
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
-/* 🧊 Stat box hover effect */
-.stat-box {
+/* 🧊 Stat Card Hover */
+.stat-box, .hover-zoom {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
 }
 
-.stat-box:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 18px rgba(0,0,0,0.1);
+.stat-box:hover, .hover-zoom:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.08);
 }
 
+/* 📊 Impact Slider */
 .impact-section {
   background-color: #ffffff;
   padding: 100px 20px;
@@ -123,4 +139,32 @@ footer {
 
 .swiper-pagination-bullet-active {
   background-color: #00cc99;
+}
+
+/* 📱 Mobile Responsiveness */
+@media (max-width: 768px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 10px;
+  }
+
+  nav a {
+    margin: 0;
+  }
+
+  .impact-card {
+    font-size: 16px;
+    padding: 25px;
+  }
+
+  .cta-button {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  .typewriter {
+    font-size: 1.5rem;
+  }
 }
