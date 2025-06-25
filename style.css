@@ -28,9 +28,14 @@ header {
 
 nav a {
   margin: 0 15px;
-  color: white;
+  color: #003366; /* deep navy */
   text-decoration: none;
   font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #00cc99; /* aqua green hover */
 }
 
 /* ✍️ Main Content */
