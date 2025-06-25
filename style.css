@@ -91,22 +91,9 @@ footer {
   to { width: 100% }
 }
 
-/* Typewriter Cursor */
-.typewriter-text::after {
-  content: "|";
-  animation: blink-caret 0.7s step-end infinite;
-  color: #00cc99;
-}
-
 /* Blink animation */
 @keyframes blink-caret {
   50% { opacity: 0; }
-}
-
-/* ✨ Hide cursor after typing */
-.typewriter-text.done::after {
-  animation: none;
-  content: "";
 }
 
 /* 💨 Slide In Animation */
