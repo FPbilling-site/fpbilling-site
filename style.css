@@ -74,27 +74,40 @@ footer {
 }
 
 /* 🔠 Typewriter Effect */
-.typewriter {
+.typewriter-text {
   overflow: hidden;
-  border-right: .15em solid #00cc99;
+  border-right: 0.15em solid #00cc99;
   white-space: nowrap;
   margin: 0 auto 20px;
-  letter-spacing: .05em;
-  animation: typing 2.5s steps(30, end), blink-caret .75s step-end infinite;
+  letter-spacing: 0.05em;
+  animation: typing 2.5s steps(30, end) forwards;
   font-size: 2rem;
   color: #00cc99;
   text-align: center;
+  position: relative;
 }
 
+/* Add the blinking cursor separately */
+.typewriter-text::after {
+  content: "|";
+  position: absolute;
+  right: -0.5em;
+  animation: blink-caret 0.75s step-end infinite;
+  color: #00cc99;
+}
+
+/* Typing animation (just once) */
 @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+  from { width: 0; }
+  to { width: 100%; }
 }
 
-/* Blink animation */
+/* Cursor blink animation */
 @keyframes blink-caret {
+  0%, 100% { opacity: 1; }
   50% { opacity: 0; }
 }
+
 
 /* 💨 Slide In Animation */
 .fade-up {
