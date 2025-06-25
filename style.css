@@ -1,0 +1,36 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fb;
+  color: #333;
+}
+header {
+  background-color: #003366;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+nav a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+}
+main {
+  padding: 40px 20px;
+}
+footer {
+  background-color: #003366;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+.cta-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #00cc99;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
