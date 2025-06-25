@@ -4,155 +4,54 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>About Us - FP Billing</title>
-  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
   <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      line-height: 1.6;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-
-    header {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      background: #ffffff;
-      border-bottom: 1px solid #e0e0e0;
-      z-index: 999;
-    }
-
-    .container {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      padding-bottom: 10px;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: #003366;
-      font-weight: 600;
-      transition: color 0.3s ease;
-    }
-
-    nav a:hover {
-      color: #00aa88;
-    }
-
-    h1 {
-      text-align: center;
-      font-size: 2.5rem;
-      margin-bottom: 10px;
-      color: #002244;
-    }
-
-    main {
-      padding-top: 120px;
-    }
-
-    section {
-      background: white;
-      margin: 40px auto;
-      padding: 40px;
-      max-width: 900px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
-    }
-
-    h2 {
-      font-size: 1.8rem;
-      margin-bottom: 15px;
-      color: #003366;
-    }
-
-    p {
-      font-size: 1.1rem;
-      color: #555;
-    }
-
-    footer {
-      text-align: center;
-      padding: 30px;
-      background: #f0f0f0;
-      font-size: 0.95rem;
-      margin-top: 60px;
-      color: #666;
-    }
-
-    @media (max-width: 768px) {
-      nav {
-        flex-direction: column;
-        gap: 10px;
-      }
-
-      section {
-        padding: 25px;
-        margin: 20px;
-      }
-
-      h1 {
-        font-size: 2rem;
-      }
-    }
+    body { font-family: 'Inter', sans-serif; }
   </style>
 </head>
-<body>
+<body class="bg-white text-gray-800">
 
-  <header>
-    <div class="container">
-      <h1>About FP Billing</h1>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="free-audit.html">Free Audit</a>
-        <a href="contact.html">Contact</a>
-      </nav>
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-teal-500 to-emerald-600 text-white py-16">
+    <div class="container mx-auto px-6 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">About FP Billing & Consulting</h1>
+      <p class="text-lg md:text-xl font-light">Powering over $2M+ in HMO collections for growing healthcare providers</p>
     </div>
-  </header>
+  </section>
 
-  <main>
-<section>
-  <h2 class="text-3xl font-bold text-green-600 mb-4">Who We Are</h2>
-  <p class="italic mb-4">Excellence in billing. Integrity in service. Results that scale.</p>
+  <!-- Content Section -->
+  <section class="py-16 px-6 md:px-20 max-w-6xl mx-auto">
+    <h2 class="text-3xl font-bold text-teal-600 mb-6">Who We Are</h2>
+    <p class="italic text-gray-600 mb-6">Excellence in billing. Integrity in service. Results that scale.</p>
 
-  <p class="mb-4">
-    With over <strong>25 years of experience</strong> in healthcare revenue cycle management, <strong>FP Billing & Consulting Services</strong> has consistently helped home health agencies, clinics, and providers unlock their full financial potential. We specialize in <strong>HMO medical billing</strong>—a space where precision, compliance, and strategy matter most.
-  </p>
+    <p class="mb-6 text-lg leading-relaxed">
+      With over <strong class="font-semibold">25 years of experience</strong> in healthcare revenue cycle management, <span class="font-semibold text-gray-900">FP Billing & Consulting Services</span> helps home health agencies, clinics, and providers unlock their full financial potential. We specialize in <strong>HMO medical billing</strong>—where precision, compliance, and speed are essential.
+    </p>
 
-  <p class="mb-4">
-    Our team is led by <strong>Felicia Ponder</strong>, a seasoned billing expert and strategic consultant, who has directly collaborated with managed care giants like <strong>NAMM, DaVita Healthcare Partners, Prospect Medical Group,</strong> and <strong>PIH Health Hospital</strong>. Under her leadership, FP Billing has helped clients grow from struggling operations into thriving practices—scaling some past <strong>$2 million+ in annual HMO billables</strong>.
-  </p>
+    <p class="mb-6 text-lg leading-relaxed">
+      Led by <strong>Felicia Ponder</strong>, our team has worked with industry giants like <strong>NAMM</strong>, <strong>DaVita Healthcare Partners</strong>, <strong>Prospect Medical Group</strong>, and <strong>PIH Health Hospital</strong>. We've helped clients scale from uncertainty to over <span class="font-bold text-green-700">$2 million+ in annual HMO billables</span>.
+    </p>
 
-  <p class="mb-4">
-    What sets us apart? We're not just billers—we're partners. We help you identify bottlenecks, optimize workflows, and improve clean claim ratios. From pre-bill audits to denial management and advanced analytics, our systems are designed to recover lost revenue and accelerate reimbursements.
-  </p>
+    <p class="mb-6 text-lg leading-relaxed">
+      Our advantage? We don’t just process claims—we help practices <span class="underline">grow</span>. From pre-bill audits and claim scrubbing to denial recovery and real-time analytics, our team builds systems that recover lost revenue and enhance operational performance.
+    </p>
 
-  <p class="mb-4">
-    As a <strong>family-run business</strong>, we believe in treating every client like family—giving you white-glove service, total transparency, and responsive support. Our proven results are powered by a relentless focus on <strong>compliance, culture improvement, team engagement,</strong> and most importantly—<strong>your bottom line</strong>.
-  </p>
+    <p class="mb-6 text-lg leading-relaxed">
+      As a <strong>family-run business</strong>, we prioritize long-term partnerships and white-glove service. Clients trust us for our attention to detail, rapid responsiveness, and consistent results—rooted in integrity, strategy, and a deep understanding of managed care billing.
+    </p>
 
-  <p class="mb-4">
-    Whether you’re a startup agency or an established provider looking to scale, FP Billing delivers real results you can count on. Our clients don’t just get paid—they grow.
-  </p>
+    <div class="mt-10 bg-gray-100 p-6 rounded-lg shadow-inner">
+      <p class="text-xl text-gray-800 font-semibold text-center">
+        Let us help you turn your billing department into your strongest revenue driver.
+      </p>
+    </div>
+  </section>
 
-  <p class="text-lg font-semibold mt-6 text-gray-700">
-    Let us help you turn billing into your strongest asset.
-  </p>
-</section>
-  </main>
-
-  <footer>
-    &copy; 2025 FP Billing. All rights reserved.
+  <!-- Footer -->
+  <footer class="bg-gray-100 text-center py-6 text-sm text-gray-600">
+    &copy; 2025 FP Billing & Consulting Services. All Rights Reserved.
   </footer>
 
 </body>
