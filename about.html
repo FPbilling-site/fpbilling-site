@@ -169,5 +169,25 @@
     <p>PO BOX 7832, Moreno Valley, CA 92555</p>
     <p>&copy; 2025 FP Billing & Consulting. All rights reserved.</p>
   </footer>
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const animatedSection = document.querySelector('.animated-section');
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          animatedSection.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.3
+    });
+
+    if (animatedSection) {
+      observer.observe(animatedSection);
+    }
+  });
+</script>
 </body>
 </html>
