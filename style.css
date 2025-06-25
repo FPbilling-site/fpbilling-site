@@ -23,8 +23,15 @@ header, footer {
 }
 
 header {
-  padding: 20px;
+  background-color: #fff;
+  color: #003366;
+  text-align: center;
+  padding: 10px 20px; /* reduce top/bottom padding */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
+
 
 nav a {
   margin: 0 15px;
