@@ -1,34 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Free Audit - FP Billing</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Free Audit | FP Billing</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/static/style.css">
 </head>
-<body>
-<header>
-  <h1>Free Audit Request</h1>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="free-audit.html">Free Audit</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
-<main>
-  <section>
-    <p>Submit the form below and our team will reach out with a customized report on your current billing status and how we can improve it.</p>
-    <form>
-      <input type="text" placeholder="Your Name" required><br><br>
-      <input type="email" placeholder="Your Email" required><br><br>
-      <input type="text" placeholder="Agency Name" required><br><br>
-      <button type="submit">Request Audit</button>
+<body class="bg-[#f4f9f9] text-[#003366]">
+  <!-- 🔹 Header -->
+  <header class="bg-white shadow-md py-4 px-6 fixed w-full top-0 z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-[#003366]">FP Billing</h1>
+      <nav class="hidden md:flex space-x-6 font-medium">
+        <a href="/" class="hover:text-[#00cc99]">Home</a>
+        <a href="/about.html" class="hover:text-[#00cc99]">About</a>
+        <a href="/services.html" class="hover:text-[#00cc99]">Services</a>
+        <a href="/free-audit.html" class="text-[#00cc99] font-bold">Free Audit</a>
+        <a href="/contact.html" class="hover:text-[#00cc99]">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="pt-32 pb-20 px-6 max-w-3xl mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-4">Let Us Prove It: Get a Free Billing Audit</h2>
+    <p class="text-lg mb-10 text-gray-700">Upload 5–10 sample claims and we'll show you how much revenue you may be leaving behind. 100% free. No pressure. Just proof.</p>
+
+    <form class="bg-white p-6 rounded-lg shadow-lg space-y-4 text-left">
+      <div>
+        <label class="block mb-1 font-semibold">Agency Name</label>
+        <input type="text" name="agency_name" required class="w-full p-2 border rounded">
+      </div>
+      <div>
+        <label class="block mb-1 font-semibold">Contact Name</label>
+        <input type="text" name="contact_name" required class="w-full p-2 border rounded">
+      </div>
+      <div>
+        <label class="block mb-1 font-semibold">Email</label>
+        <input type="email" name="email" required class="w-full p-2 border rounded">
+      </div>
+      <div>
+        <label class="block mb-1 font-semibold">Phone <span class="text-sm text-gray-500">(optional)</span></label>
+        <input type="tel" name="phone" class="w-full p-2 border rounded">
+      </div>
+      <div>
+        <label class="block mb-1 font-semibold">Upload Sample Claims <span class="text-sm text-gray-500">(PDF or Screenshot)</span></label>
+        <input type="file" name="claims" multiple accept=".pdf,.png,.jpg,.jpeg" class="w-full">
+      </div>
+      <div>
+        <label class="block mb-1 font-semibold">Notes or Concerns</label>
+        <textarea name="notes" rows="4" class="w-full p-2 border rounded"></textarea>
+      </div>
+      <button type="submit" class="bg-[#00cc99] hover:bg-[#009977] text-white py-3 px-6 rounded font-semibold w-full">Send for Free Audit</button>
     </form>
-  </section>
-</main>
-<footer>
-  <p>&copy; 2025 FP Billing. All rights reserved.</p>
-</footer>
+
+    <p class="mt-4 text-sm text-gray-500">You’ll hear back from us in 1 business day — 100% confidential.</p>
+  </main>
+
+  <footer class="bg-[#003366] text-white text-center py-6 mt-10">
+    <p>&copy; 2025 FP Billing. All rights reserved.</p>
+  </footer>
 </body>
 </html>
