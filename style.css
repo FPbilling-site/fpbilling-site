@@ -127,44 +127,75 @@ footer {
   background-color: #009977;
 }
 
-/* 🔠 Typewriter Effect */
+/* 🔠 Typewriter Effect - Completely Rewritten */
+.typewriter-container {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto;
+}
+
 .typewriter-text {
+  display: inline-block;
   overflow: hidden;
-  border-right: 0.15em solid #00cc99;
-  white-space: normal; /* Changed from nowrap to allow wrapping on mobile */
-  margin: 0 auto 20px;
+  white-space: nowrap; /* Keep text on one line during animation */
+  border-right: 3px solid #00cc99; /* Cursor */
+  margin: 0 auto;
   letter-spacing: 0.05em;
-  animation: typing 2.5s steps(30, end) forwards;
-  font-size: 2rem;
-  color: #00cc99;
+  color: white; /* Changed from #00cc99 to white for hero section */
   text-align: center;
   position: relative;
-  line-height: 1.2; /* Added for better mobile readability */
-  word-wrap: break-word; /* Ensure long words wrap properly */
-  hyphens: auto; /* Enable automatic hyphenation */
+  line-height: 1.2;
+  animation: typing 3s steps(50, end), blink-caret 0.75s step-end infinite;
+  animation-delay: 0.5s; /* Delay before starting */
+  animation-fill-mode: both; /* Keep initial state until animation starts */
+  width: 0; /* Start with 0 width */
+  max-width: 100%; /* Ensure it doesn't overflow container */
 }
 
-/* Add the blinking cursor separately */
-.typewriter-text::after {
-  content: "|";
-  position: absolute;
-  right: -0.5em;
-  animation: blink-caret 0.75s step-end infinite;
-  color: #00cc99;
-}
-
-/* Typing animation (just once) */
+/* Typing animation */
 @keyframes typing {
-  from { width: 0; }
-  to { width: 100%; }
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
 }
 
 /* Cursor blink animation */
 @keyframes blink-caret {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
+  0%, 50% {
+    border-color: transparent;
+  }
+  51%, 100% {
+    border-color: #00cc99;
+  }
 }
 
+/* After typing completes, fade out the cursor */
+.typewriter-text.typing-complete {
+  animation: typing 3s steps(50, end) 0.5s both, blink-cursor 0.75s step-end infinite 3.5s, fade-cursor 0.5s ease-out 6s forwards;
+}
+
+/* Fade out cursor animation */
+@keyframes fade-cursor {
+  0% {
+    border-color: #00cc99;
+  }
+  100% {
+    border-color: transparent;
+  }
+}
+
+/* Blink cursor during typing */
+@keyframes blink-cursor {
+  0%, 50% {
+    border-color: transparent;
+  }
+  51%, 100% {
+    border-color: #00cc99;
+  }
+}
 
 /* 💨 Slide In Animation */
 .fade-up {
@@ -267,6 +298,13 @@ footer {
     line-height: 1.3; /* better line height for mobile */
     margin-bottom: 16px;
     padding: 0 8px; /* add some horizontal padding */
+    white-space: nowrap; /* Keep text on one line during animation */
+    overflow: hidden; /* Ensure text is hidden during animation */
+  }
+  
+  .typewriter-container {
+    width: 100%; /* Full width on mobile */
+    max-width: 100%; /* Prevent overflow */
   }
   
   /* Mobile menu optimizations */
@@ -337,6 +375,8 @@ footer {
     font-size: 1.25rem; /* even smaller font size for very small screens */
     line-height: 1.4;
     padding: 0 4px;
+    white-space: nowrap; /* Keep text on one line during animation */
+    overflow: hidden; /* Ensure text is hidden during animation */
   }
   
   #mobile-menu a {
