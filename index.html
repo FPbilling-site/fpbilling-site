@@ -41,11 +41,9 @@
 
   <!-- 🎯 Hero Section with CTA -->
   <section class="bg-[#003366] text-white pt-20 pb-16 sm:pt-24 sm:pb-24 px-4 sm:px-6 text-center">
-    <div class="typewriter-container overflow-hidden">
-      <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight typewriter-text max-w-4xl mx-auto">
-        Get Paid What You Deserve — Without the HMO Headaches
-      </h2>
-    </div>
+    <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight fade-up max-w-4xl mx-auto">
+      Get Paid What You Deserve — Without the HMO Headaches
+    </h2>
     <p class="max-w-xl mx-auto text-base sm:text-lg mb-8 fade-up px-2 sm:px-4">
       We help home health agencies collect faster, reduce denials, and streamline their billing — with zero upfront cost.
     </p>
@@ -206,17 +204,6 @@
         const mobileMenu = document.getElementById('mobile-menu');
         mobileMenu.classList.remove('show');
         mobileMenu.classList.add('hidden');
-      }
-    });
-
-    // Typewriter animation completion handler
-    document.addEventListener('DOMContentLoaded', function() {
-      const typewriterText = document.querySelector('.typewriter-text');
-      if (typewriterText) {
-        // Add typing-complete class after animation finishes (3s typing + 0.5s delay = 3.5s)
-        setTimeout(function() {
-          typewriterText.classList.add('typing-complete');
-        }, 3500);
       }
     });
   </script>

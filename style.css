@@ -127,76 +127,6 @@ footer {
   background-color: #009977;
 }
 
-/* 🔠 Typewriter Effect - Completely Rewritten */
-.typewriter-container {
-  display: inline-block;
-  position: relative;
-  margin: 0 auto;
-}
-
-.typewriter-text {
-  display: inline-block;
-  overflow: hidden;
-  white-space: nowrap; /* Keep text on one line during animation */
-  border-right: 3px solid #00cc99; /* Cursor */
-  margin: 0 auto;
-  letter-spacing: 0.05em;
-  color: white; /* Changed from #00cc99 to white for hero section */
-  text-align: center;
-  position: relative;
-  line-height: 1.2;
-  animation: typing 3s steps(50, end), blink-caret 0.75s step-end infinite;
-  animation-delay: 0.5s; /* Delay before starting */
-  animation-fill-mode: both; /* Keep initial state until animation starts */
-  width: 0; /* Start with 0 width */
-  max-width: 100%; /* Ensure it doesn't overflow container */
-}
-
-/* Typing animation */
-@keyframes typing {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 100%;
-  }
-}
-
-/* Cursor blink animation */
-@keyframes blink-caret {
-  0%, 50% {
-    border-color: transparent;
-  }
-  51%, 100% {
-    border-color: #00cc99;
-  }
-}
-
-/* After typing completes, fade out the cursor */
-.typewriter-text.typing-complete {
-  animation: typing 3s steps(50, end) 0.5s both, blink-cursor 0.75s step-end infinite 3.5s, fade-cursor 0.5s ease-out 6s forwards;
-}
-
-/* Fade out cursor animation */
-@keyframes fade-cursor {
-  0% {
-    border-color: #00cc99;
-  }
-  100% {
-    border-color: transparent;
-  }
-}
-
-/* Blink cursor during typing */
-@keyframes blink-cursor {
-  0%, 50% {
-    border-color: transparent;
-  }
-  51%, 100% {
-    border-color: #00cc99;
-  }
-}
-
 /* 💨 Slide In Animation */
 .fade-up {
   opacity: 0;
@@ -289,22 +219,7 @@ footer {
   
   /* Ensure hero sections have proper top spacing */
   section.bg-\[#003366\]:first-of-type {
-    padding-top: 80px !important; /* increased padding to prevent text cutoff */
-  }
-  
-  /* Hero text optimizations for mobile */
-  .typewriter-text {
-    font-size: 1.5rem; /* smaller font size for mobile */
-    line-height: 1.3; /* better line height for mobile */
-    margin-bottom: 16px;
-    padding: 0 8px; /* add some horizontal padding */
-    white-space: nowrap; /* Keep text on one line during animation */
-    overflow: hidden; /* Ensure text is hidden during animation */
-  }
-  
-  .typewriter-container {
-    width: 100%; /* Full width on mobile */
-    max-width: 100%; /* Prevent overflow */
+    padding-top: 90px !important; /* increased padding to prevent text cutoff */
   }
   
   /* Mobile menu optimizations */
@@ -338,11 +253,6 @@ footer {
     padding: 10px 20px;
     font-size: 16px;
   }
-
-  /* Typewriter mobile adjustments */
-  .typewriter {
-    font-size: 1.5rem;
-  }
   
   /* Impact section mobile adjustments */
   .impact-section {
@@ -367,16 +277,7 @@ footer {
   
   /* Ensure hero sections have proper top spacing on very small screens */
   section.bg-\[#003366\]:first-of-type {
-    padding-top: 76px !important; /* slightly less padding for very small screens */
-  }
-  
-  /* Hero text optimizations for very small screens */
-  .typewriter-text {
-    font-size: 1.25rem; /* even smaller font size for very small screens */
-    line-height: 1.4;
-    padding: 0 4px;
-    white-space: nowrap; /* Keep text on one line during animation */
-    overflow: hidden; /* Ensure text is hidden during animation */
+    padding-top: 86px !important; /* slightly less padding for very small screens */
   }
   
   #mobile-menu a {
