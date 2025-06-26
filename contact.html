@@ -2,83 +2,122 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Contact Us - FP Billing & Consulting</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - FP Billing Services | HMO Billing Experts for Home Health</title>
+  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="favicon.ico" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 <body class="bg-white text-gray-800 font-sans">
 
-  <!-- 🌐 Navigation -->
+  <!-- 🌟 Navigation -->
   <header class="shadow-md fixed top-0 left-0 w-full z-50 bg-white">
     <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-      <div class="text-2xl font-bold text-[#003366] tracking-wide">FP Billing</div>
+      <div class="text-2xl font-bold text-[#003366] tracking-wide">FP Billing & Consulting Services</div>
       <nav class="space-x-6 hidden md:flex text-[#003366] font-medium">
         <a href="index.html" class="hover:text-[#00cc99] transition">Home</a>
         <a href="about.html" class="hover:text-[#00cc99] transition">About</a>
         <a href="services.html" class="hover:text-[#00cc99] transition">Services</a>
-        <a href="free-audit.html" class="hover:text-[#00cc99] transition">Free Audit</a>
         <a href="contact.html" class="text-[#00cc99] font-semibold">Contact</a>
       </nav>
     </div>
   </header>
 
-  <!-- 📞 Hero Section -->
-  <section class="bg-gradient-to-r from-[#e6f0f9] to-white py-32 px-6 text-center mt-20">
-    <h1 class="text-5xl font-bold text-[#003366] mb-4 fade-up">Contact Us</h1>
-    <p class="max-w-xl mx-auto text-lg text-gray-700 fade-up">We’re here to support your growth. Whether you’re a new agency or an established practice, let’s talk about how we can take your billing to the next level.</p>
+  <!-- 🎯 Hero Section -->
+  <section class="bg-[#003366] text-white py-24 px-6 text-center">
+    <h2 class="text-4xl md:text-5xl font-bold mb-4 leading-tight fade-up">
+      Let's Talk About Your Billing Success
+    </h2>
+    <p class="max-w-xl mx-auto text-lg mb-8 fade-up">
+      Ready to stop losing money on denials and start collecting what you deserve? We're here to help.
+    </p>
   </section>
 
-  <!-- ✉️ Contact Form -->
-  <main class="max-w-5xl mx-auto px-6 py-20">
-    <div class="grid md:grid-cols-2 gap-10">
-      <form class="space-y-6 bg-white shadow-lg p-8 rounded-lg border border-gray-200">
-        <div>
-          <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
-          <input type="text" id="name" name="name" class="mt-1 w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#00cc99]" required>
+  <!-- 📞 Contact Form Section -->
+  <section class="py-20 px-6 bg-white">
+    <div class="max-w-5xl mx-auto">
+      <div class="grid md:grid-cols-2 gap-10">
+        <!-- Contact Form -->
+        <div class="bg-white shadow-lg p-8 rounded-lg border border-gray-200">
+          <h3 class="text-2xl font-bold text-[#003366] mb-6">Send Us a Message</h3>
+          <form class="space-y-6">
+            <div>
+              <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Name</label>
+              <input type="text" id="name" name="name" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#00cc99] focus:border-[#00cc99]" required>
+            </div>
+            <div>
+              <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+              <input type="email" id="email" name="email" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#00cc99] focus:border-[#00cc99]" required>
+            </div>
+            <div>
+              <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">Phone</label>
+              <input type="tel" id="phone" name="phone" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#00cc99] focus:border-[#00cc99]">
+            </div>
+            <div>
+              <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+              <textarea id="message" name="message" rows="5" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#00cc99] focus:border-[#00cc99]" required></textarea>
+            </div>
+            <button type="submit" class="w-full bg-[#00cc99] text-white font-semibold py-3 px-6 rounded hover:bg-[#009977] transition">
+              Send Message
+            </button>
+          </form>
         </div>
-        <div>
-          <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
-          <input type="email" id="email" name="email" class="mt-1 w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#00cc99]" required>
-        </div>
-        <div>
-          <label for="phone" class="block text-sm font-medium text-gray-700">Phone</label>
-          <input type="tel" id="phone" name="phone" class="mt-1 w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#00cc99]">
-        </div>
-        <div>
-          <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
-          <textarea id="message" name="message" rows="5" class="mt-1 w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#00cc99]" required></textarea>
-        </div>
-        <button type="submit" class="w-full py-3 px-6 bg-[#003366] text-white font-semibold rounded hover:bg-[#002244] transition">Send Message</button>
-      </form>
 
-      <div class="flex flex-col justify-center text-[#003366] space-y-6">
-        <div>
-          <h3 class="text-xl font-bold mb-1">Our Office</h3>
-          <p>PO BOX 7832<br>Moreno Valley, CA 92555</p>
-        </div>
-        <div>
-          <h3 class="text-xl font-bold mb-1">Phone</h3>
-          <p>951-547-1670 ext 101</p>
-        </div>
-        <div>
-          <h3 class="text-xl font-bold mb-1">Email</h3>
-          <p>info@fpbillingservices.com</p>
-        </div>
-        <div>
-          <h3 class="text-xl font-bold mb-1">Business Hours</h3>
-          <p>Mon - Fri: 9am – 6pm PST</p>
+        <!-- Contact Information -->
+        <div class="flex flex-col justify-center text-[#003366] space-y-8">
+          <div>
+            <h3 class="text-xl font-bold mb-3">Get in Touch</h3>
+            <p class="text-lg">Ready to transform your billing? Let's discuss how we can help you collect more, faster.</p>
+          </div>
+          
+          <div class="space-y-6">
+            <div class="flex items-start gap-4">
+              <div class="w-8 h-8 bg-[#00cc99] rounded-full flex items-center justify-center text-white font-bold">📍</div>
+              <div>
+                <h4 class="font-bold mb-1">Our Office</h4>
+                <p>PO BOX 7832<br>Moreno Valley, CA 92555</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start gap-4">
+              <div class="w-8 h-8 bg-[#00cc99] rounded-full flex items-center justify-center text-white font-bold">📞</div>
+              <div>
+                <h4 class="font-bold mb-1">Phone</h4>
+                <p>951-547-1670 ext 101</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start gap-4">
+              <div class="w-8 h-8 bg-[#00cc99] rounded-full flex items-center justify-center text-white font-bold">✉️</div>
+              <div>
+                <h4 class="font-bold mb-1">Email</h4>
+                <p>info@fpbillingservices.com</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start gap-4">
+              <div class="w-8 h-8 bg-[#00cc99] rounded-full flex items-center justify-center text-white font-bold">🕒</div>
+              <div>
+                <h4 class="font-bold mb-1">Business Hours</h4>
+                <p>Mon - Fri: 9am – 6pm PST</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </main>
+  </section>
 
-  <!-- 🦶 Footer -->
-  <footer class="bg-gray-100 text-center text-sm py-6 text-gray-600">
-    <p>FP Billing & Consulting</p>
-    <p>info@fpbillingservices.com | 951-547-1670 ext 101</p>
-    <p>PO BOX 7832, Moreno Valley, CA 92555</p>
-    <p>&copy; 2025 FP Billing & Consulting. All rights reserved.</p>
+  <!-- 📞 Final CTA -->
+  <section class="py-24 px-6 bg-[#003366] text-white text-center">
+    <h3 class="text-4xl font-bold mb-6 fade-up">Ready to Start Collecting More?</h3>
+    <p class="text-lg mb-6 max-w-xl mx-auto fade-up">Get your free 10-claim audit and see exactly where you're losing money — and how we can help you recover it.</p>
+    <a href="free-audit.html" class="bg-[#00cc99] px-6 py-3 text-lg font-semibold rounded hover:bg-[#009977] transition">Request Free 10‑Claim Audit</a>
+  </section>
+
+  <!-- 🔻 Footer -->
+  <footer class="bg-gray-100 text-center text-sm py-6 mt-10 text-gray-600">
+    &copy; 2025 FP Billing Services. All rights reserved.
   </footer>
 
 </body>
