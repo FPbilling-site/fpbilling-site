@@ -13,58 +13,73 @@
 
   <!-- 🌟 Navigation -->
   <header class="shadow-md fixed top-0 left-0 w-full z-50 bg-white">
-    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-      <div class="text-2xl font-bold text-[#003366] tracking-wide">FP Billing & Consulting Services</div>
-      <nav class="space-x-6 hidden md:flex text-[#003366] font-medium">
-        <a href="index.html" class="hover:text-[#00cc99] transition">Home</a>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
+      <div class="text-xl sm:text-2xl font-bold text-[#003366] tracking-wide">FP Billing & Consulting Services</div>
+      <nav class="space-x-4 sm:space-x-6 hidden md:flex text-[#003366] font-medium">
+        <a href="index.html" class="text-[#00cc99] font-semibold">Home</a>
         <a href="about.html" class="hover:text-[#00cc99] transition">About</a>
         <a href="services.html" class="hover:text-[#00cc99] transition">Services</a>
         <a href="contact.html" class="hover:text-[#00cc99] transition">Contact</a>
+      </nav>
+      <!-- Mobile menu button -->
+      <button class="md:hidden text-[#003366] hover:text-[#00cc99] transition" id="mobile-menu-btn">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+    <!-- Mobile menu -->
+    <div class="md:hidden hidden bg-white border-t border-gray-200" id="mobile-menu">
+      <nav class="px-4 py-2 space-y-2 text-[#003366] font-medium">
+        <a href="index.html" class="block py-2 text-[#00cc99] font-semibold">Home</a>
+        <a href="about.html" class="block py-2 hover:text-[#00cc99] transition">About</a>
+        <a href="services.html" class="block py-2 hover:text-[#00cc99] transition">Services</a>
+        <a href="contact.html" class="block py-2 hover:text-[#00cc99] transition">Contact</a>
       </nav>
     </div>
   </header>
 
   <!-- 🎯 Hero Section with CTA -->
-  <section class="bg-[#003366] text-white py-24 px-6 text-center">
-    <h2 class="text-4xl md:text-5xl font-bold mb-4 leading-tight fade-up typewriter-text">
+  <section class="bg-[#003366] text-white py-16 sm:py-24 px-4 sm:px-6 text-center">
+    <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 leading-tight fade-up typewriter-text">
       Get Paid What You Deserve — Without the HMO Headaches
     </h2>
-    <p class="max-w-xl mx-auto text-lg mb-8 fade-up">
+    <p class="max-w-xl mx-auto text-base sm:text-lg mb-8 fade-up px-4">
       We help home health agencies collect faster, reduce denials, and streamline their billing — with zero upfront cost.
     </p>
-    <a href="free-audit.html" class="bg-[#00cc99] px-6 py-3 text-lg font-semibold rounded hover:bg-[#009977] transition">
+    <a href="free-audit.html" class="bg-[#00cc99] px-6 py-3 text-base sm:text-lg font-semibold rounded hover:bg-[#009977] transition">
       Request Free 10‑Claim Audit
     </a>
   </section>
 
   <!-- ❌ Pain Points -->
-  <section class="py-20 px-6 bg-white text-center fade-up">
-    <h3 class="text-2xl md:text-3xl font-bold text-[#003366] mb-8">
+  <section class="py-12 sm:py-20 px-4 sm:px-6 bg-white text-center fade-up">
+    <h3 class="text-xl sm:text-2xl md:text-3xl font-bold text-[#003366] mb-6 sm:mb-8">
       Still Losing Money on Denials, TARs, or Delayed Payments?
     </h3>
-    <ul class="max-w-2xl mx-auto text-left space-y-4 text-lg">
+    <ul class="max-w-2xl mx-auto text-left space-y-3 sm:space-y-4 text-base sm:text-lg px-4">
       <li>❌ 20–30% of revenue lost due to preventable billing errors</li>
       <li>❌ Missed TARs and expired authorizations = unpaid visits</li>
-      <li>❌ Most billers don’t understand HMO capitation & crossover rules</li>
+      <li>❌ Most billers don't understand HMO capitation & crossover rules</li>
       <li>❌ Denials from IEHP, Kaiser, SCAN dragging your AR down</li>
     </ul>
   </section>
 
   <!-- ✅ What We Do -->
-  <section class="py-20 px-6 bg-gray-50 text-center">
-    <h3 class="text-3xl font-bold text-[#003366] mb-12 fade-up">What We Do Best</h3>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
-      <div class="bg-white p-6 shadow-md border-l-4 border-[#00cc99] text-left rounded-md hover-zoom">✔️ Home Health HMO Billing (Kaiser, SCAN, IEHP, etc.)</div>
-      <div class="bg-white p-6 shadow-md border-l-4 border-[#00cc99] text-left rounded-md hover-zoom">✔️ Authorization Tracking + Expiration Alerts</div>
-      <div class="bg-white p-6 shadow-md border-l-4 border-[#00cc99] text-left rounded-md hover-zoom">✔️ AR Cleanup & Denial Resubmission</div>
-      <div class="bg-white p-6 shadow-md border-l-4 border-[#00cc99] text-left rounded-md hover-zoom">✔️ Weekly Custom Denial Reporting</div>
-      <div class="bg-white p-6 shadow-md border-l-4 border-[#00cc99] text-left rounded-md hover-zoom">✔️ Seamless Claims Submission + Appeals</div>
+  <section class="py-12 sm:py-20 px-4 sm:px-6 bg-gray-50 text-center">
+    <h3 class="text-2xl sm:text-3xl font-bold text-[#003366] mb-8 sm:mb-12 fade-up">What We Do Best</h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-5xl mx-auto">
+      <div class="bg-white p-4 sm:p-6 shadow-md border-l-4 border-[#00cc99] text-left rounded-md hover-zoom text-sm sm:text-base">✔️ Home Health HMO Billing (Kaiser, SCAN, IEHP, etc.)</div>
+      <div class="bg-white p-4 sm:p-6 shadow-md border-l-4 border-[#00cc99] text-left rounded-md hover-zoom text-sm sm:text-base">✔️ Authorization Tracking + Expiration Alerts</div>
+      <div class="bg-white p-4 sm:p-6 shadow-md border-l-4 border-[#00cc99] text-left rounded-md hover-zoom text-sm sm:text-base">✔️ AR Cleanup & Denial Resubmission</div>
+      <div class="bg-white p-4 sm:p-6 shadow-md border-l-4 border-[#00cc99] text-left rounded-md hover-zoom text-sm sm:text-base">✔️ Weekly Custom Denial Reporting</div>
+      <div class="bg-white p-4 sm:p-6 shadow-md border-l-4 border-[#00cc99] text-left rounded-md hover-zoom text-sm sm:text-base">✔️ Seamless Claims Submission + Appeals</div>
     </div>
   </section>
 
   <!-- 📊 Impact Slider -->
-  <section class="impact-section bg-white py-24 px-6 text-center">
-    <h2 class="impact-title text-3xl md:text-4xl font-bold text-[#003366] mb-12 fade-up">Real Impact for Real Agencies</h2>
+  <section class="impact-section bg-white py-12 sm:py-24 px-4 sm:px-6 text-center">
+    <h2 class="impact-title text-2xl sm:text-3xl md:text-4xl font-bold text-[#003366] mb-8 sm:mb-12 fade-up">Real Impact for Real Agencies</h2>
     <div class="swiper impactSwiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide impact-card">+ $18,000 recovered from SCAN denials in 30 days.</div>
@@ -77,44 +92,44 @@
         <div class="swiper-slide impact-card">Daily TAR alerts across 100+ home health patients.</div>
         <div class="swiper-slide impact-card">98% denial resubmission success rate.</div>
       </div>
-      <div class="swiper-pagination mt-8"></div>
+      <div class="swiper-pagination mt-6 sm:mt-8"></div>
     </div>
   </section>
 
 <!-- 🌟 Why Choose Us Section -->
-<section class="bg-white py-20">
-  <div class="max-w-7xl mx-auto px-6 text-center">
-    <h2 class="text-2xl md:text-3xl font-bold text-[#003366] mb-10">
+<section class="bg-white py-12 sm:py-20">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 text-center">
+    <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-[#003366] mb-8 sm:mb-10">
       Why Leading Home Health Agencies Trust FP Billing
     </h2>
 
-    <div class="grid md:grid-cols-2 gap-8 text-[#003366] text-lg leading-relaxed max-w-4xl mx-auto text-left">
-      <div class="flex items-start gap-4">
-        <span class="text-green-500 text-xl mt-1">✔</span>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 text-[#003366] text-base sm:text-lg leading-relaxed max-w-4xl mx-auto text-left">
+      <div class="flex items-start gap-3 sm:gap-4">
+        <span class="text-green-500 text-lg sm:text-xl mt-1">✔</span>
         <p>
           <strong>Home Health HMO Experts</strong><br>
           We specialize in Kaiser, SCAN, and IEHP billing — not general practice claims.
         </p>
       </div>
-      <div class="flex items-start gap-4">
-        <span class="text-green-500 text-xl mt-1">✔</span>
+      <div class="flex items-start gap-3 sm:gap-4">
+        <span class="text-green-500 text-lg sm:text-xl mt-1">✔</span>
         <p>
           <strong>Proactive Denial Prevention</strong><br>
           We track expirations, authorizations, and TARs daily so nothing slips through.
         </p>
       </div>
-      <div class="flex items-start gap-4">
-        <span class="text-green-500 text-xl mt-1">✔</span>
+      <div class="flex items-start gap-3 sm:gap-4">
+        <span class="text-green-500 text-lg sm:text-xl mt-1">✔</span>
         <p>
           <strong>Weekly Transparency</strong><br>
           Get clean reports and billing insights that help you forecast and grow with clarity.
         </p>
       </div>
-      <div class="flex items-start gap-4">
-        <span class="text-green-500 text-xl mt-1">✔</span>
+      <div class="flex items-start gap-3 sm:gap-4">
+        <span class="text-green-500 text-lg sm:text-xl mt-1">✔</span>
         <p>
           <strong>No Win, No Fee</strong><br>
-          You don’t pay unless we collect — it’s risk-free, results-first billing support.
+          You don't pay unless we collect — it's risk-free, results-first billing support.
         </p>
       </div>
     </div>
@@ -122,14 +137,14 @@
 </section>
 
   <!-- 📞 Final CTA -->
-  <section class="py-24 px-6 bg-[#003366] text-white text-center">
-    <h3 class="text-4xl font-bold mb-6 fade-up">Let’s Find the Revenue You’re Missing</h3>
-    <p class="text-lg mb-6 max-w-xl mx-auto fade-up">We’ll audit 10 of your HMO claims for free and show you exactly where money is being lost — and how we’d fix it.</p>
-    <a href="free-audit.html" class="bg-[#00cc99] px-6 py-3 text-lg font-semibold rounded hover:bg-[#009977] transition">Book My Free 10-Claim Audit</a>
+  <section class="py-12 sm:py-24 px-4 sm:px-6 bg-[#003366] text-white text-center">
+    <h3 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 fade-up">Let's Find the Revenue You're Missing</h3>
+    <p class="text-base sm:text-lg mb-6 max-w-xl mx-auto fade-up px-4">We'll audit 10 of your HMO claims for free and show you exactly where money is being lost — and how we'd fix it.</p>
+    <a href="free-audit.html" class="bg-[#00cc99] px-6 py-3 text-base sm:text-lg font-semibold rounded hover:bg-[#009977] transition">Book My Free 10-Claim Audit</a>
   </section>
 
   <!-- 🔻 Footer -->
-  <footer class="bg-gray-100 text-center text-sm py-6 mt-10 text-gray-600">
+  <footer class="bg-gray-100 text-center text-xs sm:text-sm py-6 mt-10 text-gray-600">
     &copy; 2025 FP Billing Services. All rights reserved.
   </footer>
 
@@ -156,6 +171,12 @@
           slidesPerView: 3,
         },
       },
+    });
+
+    // Mobile menu script
+    document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+      const mobileMenu = document.getElementById('mobile-menu');
+      mobileMenu.classList.toggle('hidden');
     });
   </script>
 

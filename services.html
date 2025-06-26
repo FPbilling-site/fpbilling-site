@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Our Services | FP Billing</title>
+  <title>Our Services - FP Billing Services | HMO Billing Experts for Home Health</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="favicon.ico" />
@@ -12,57 +12,71 @@
 
   <!-- 🌟 Navigation -->
   <header class="shadow-md fixed top-0 left-0 w-full z-50 bg-white">
-    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-      <div class="text-2xl font-bold text-[#003366] tracking-wide">FP Billing</div>
-      <nav class="space-x-6 hidden md:flex text-[#003366] font-medium">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
+      <div class="text-xl sm:text-2xl font-bold text-[#003366] tracking-wide">FP Billing & Consulting Services</div>
+      <nav class="space-x-4 sm:space-x-6 hidden md:flex text-[#003366] font-medium">
         <a href="index.html" class="hover:text-[#00cc99] transition">Home</a>
         <a href="about.html" class="hover:text-[#00cc99] transition">About</a>
         <a href="services.html" class="text-[#00cc99] font-semibold">Services</a>
-        <a href="free-audit.html" class="hover:text-[#00cc99] transition">Free Audit</a>
         <a href="contact.html" class="hover:text-[#00cc99] transition">Contact</a>
+      </nav>
+      <!-- Mobile menu button -->
+      <button class="md:hidden text-[#003366] hover:text-[#00cc99] transition" id="mobile-menu-btn">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+    <!-- Mobile menu -->
+    <div class="md:hidden hidden bg-white border-t border-gray-200" id="mobile-menu">
+      <nav class="px-4 py-2 space-y-2 text-[#003366] font-medium">
+        <a href="index.html" class="block py-2 hover:text-[#00cc99] transition">Home</a>
+        <a href="about.html" class="block py-2 hover:text-[#00cc99] transition">About</a>
+        <a href="services.html" class="block py-2 text-[#00cc99] font-semibold">Services</a>
+        <a href="contact.html" class="block py-2 hover:text-[#00cc99] transition">Contact</a>
       </nav>
     </div>
   </header>
 
   <!-- 🧾 Hero Section -->
-  <section class="bg-[#003366] text-white py-28 px-6 text-center">
-    <h1 class="text-4xl md:text-5xl font-bold mb-4 typewriter">Medical Billing, But Smarter.</h1>
-    <p class="max-w-2xl mx-auto text-lg">We go beyond billing — our team becomes your partner in maximizing revenue and cutting denials at the source.</p>
+  <section class="bg-[#003366] text-white py-16 sm:py-24 px-4 sm:px-6 text-center">
+    <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 typewriter leading-tight">Medical Billing, But Smarter.</h1>
+    <p class="max-w-2xl mx-auto text-base sm:text-lg px-4">We go beyond billing — our team becomes your partner in maximizing revenue and cutting denials at the source.</p>
   </section>
 
 <!-- 🔧 Our Services -->
-<section class="bg-white py-20">
-  <div class="max-w-6xl mx-auto px-6">
-    <h2 class="text-3xl font-bold text-[#003366] text-center mb-10">Comprehensive Billing Services for Home Health Agencies</h2>
+<section class="bg-white py-12 sm:py-20 px-4 sm:px-6">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-2xl sm:text-3xl font-bold text-[#003366] text-center mb-8 sm:mb-10 px-4">Comprehensive Billing Services for Home Health Agencies</h2>
 
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-[#003366] text-base">
-      <div class="p-6 bg-gray-50 rounded shadow hover:shadow-md transition hover:-translate-y-1">
-        <h3 class="font-semibold text-lg mb-2">HMO Billing (Kaiser, SCAN, IEHP, etc.)</h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 text-[#003366] text-sm sm:text-base">
+      <div class="p-4 sm:p-6 bg-gray-50 rounded shadow hover:shadow-md transition hover:-translate-y-1">
+        <h3 class="font-semibold text-base sm:text-lg mb-2">HMO Billing (Kaiser, SCAN, IEHP, etc.)</h3>
         <p>Full-cycle claims management — from creation to denial resubmission — for home health-focused HMOs.</p>
       </div>
 
-      <div class="p-6 bg-gray-50 rounded shadow hover:shadow-md transition hover:-translate-y-1">
-        <h3 class="font-semibold text-lg mb-2">Authorization Management</h3>
+      <div class="p-4 sm:p-6 bg-gray-50 rounded shadow hover:shadow-md transition hover:-translate-y-1">
+        <h3 class="font-semibold text-base sm:text-lg mb-2">Authorization Management</h3>
         <p>We track every TAR, auth, and expiration — and alert your team before anything lapses.</p>
       </div>
 
-      <div class="p-6 bg-gray-50 rounded shadow hover:shadow-md transition hover:-translate-y-1">
-        <h3 class="font-semibold text-lg mb-2">Denial Prevention & Appeals</h3>
+      <div class="p-4 sm:p-6 bg-gray-50 rounded shadow hover:shadow-md transition hover:-translate-y-1">
+        <h3 class="font-semibold text-base sm:text-lg mb-2">Denial Prevention & Appeals</h3>
         <p>Proactive edits, scrubbers, and a rapid resubmission process help overturn denials and capture lost revenue fast.</p>
       </div>
 
-      <div class="p-6 bg-gray-50 rounded shadow hover:shadow-md transition hover:-translate-y-1">
-        <h3 class="font-semibold text-lg mb-2">Accounts Receivable Cleanup</h3>
+      <div class="p-4 sm:p-6 bg-gray-50 rounded shadow hover:shadow-md transition hover:-translate-y-1">
+        <h3 class="font-semibold text-base sm:text-lg mb-2">Accounts Receivable Cleanup</h3>
         <p>We analyze your aging report, prioritize high-value claims, and recover stuck payments — even 90+ days out.</p>
       </div>
 
-      <div class="p-6 bg-gray-50 rounded shadow hover:shadow-md transition hover:-translate-y-1">
-        <h3 class="font-semibold text-lg mb-2">Weekly Reporting & Visibility</h3>
+      <div class="p-4 sm:p-6 bg-gray-50 rounded shadow hover:shadow-md transition hover:-translate-y-1">
+        <h3 class="font-semibold text-base sm:text-lg mb-2">Weekly Reporting & Visibility</h3>
         <p>Know exactly where your money is. Custom reports give you visibility into claims, collections, denials, and trends.</p>
       </div>
 
-      <div class="p-6 bg-gray-50 rounded shadow hover:shadow-md transition hover:-translate-y-1">
-        <h3 class="font-semibold text-lg mb-2">Revenue Cycle Optimization</h3>
+      <div class="p-4 sm:p-6 bg-gray-50 rounded shadow hover:shadow-md transition hover:-translate-y-1">
+        <h3 class="font-semibold text-base sm:text-lg mb-2">Revenue Cycle Optimization</h3>
         <p>We streamline your front-end intake and backend collections — aligning your agency for better margins and growth.</p>
       </div>
     </div>
@@ -70,49 +84,57 @@
 </section>
 
   <!-- 💬 Live Quote Box -->
-<section class="bg-[#f0f9f7] py-24 px-6">
+<section class="bg-[#f0f9f7] py-12 sm:py-24 px-4 sm:px-6">
   <div class="max-w-4xl mx-auto text-center">
-    <h2 class="text-3xl md:text-4xl font-bold text-[#003366] mb-4 fade-up">Get Your Custom Quote</h2>
-    <p class="text-[#003366] mb-10 text-lg fade-up">Tell us about your agency, and we'll send you a tailored quote with projected savings — no pressure, no spam.</p>
+    <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-[#003366] mb-4 fade-up px-4">Get Your Custom Quote</h2>
+    <p class="text-[#003366] mb-8 sm:mb-10 text-base sm:text-lg fade-up px-4">Tell us about your agency, and we'll send you a tailored quote with projected savings — no pressure, no spam.</p>
 
-    <form class="bg-white rounded-lg shadow-lg p-8 text-left space-y-6 max-w-2xl mx-auto fade-up">
+    <form class="bg-white rounded-lg shadow-lg p-6 sm:p-8 text-left space-y-4 sm:space-y-6 max-w-2xl mx-auto fade-up">
       <div>
-        <label class="block font-semibold mb-1 text-[#003366]">Agency Name</label>
-        <input type="text" placeholder="PractiCare Home Health" class="w-full border border-gray-300 rounded p-3 focus:outline-none focus:ring-2 focus:ring-[#00cc99]">
+        <label class="block font-semibold mb-1 text-[#003366] text-sm sm:text-base">Agency Name</label>
+        <input type="text" placeholder="PractiCare Home Health" class="w-full border border-gray-300 rounded p-3 focus:outline-none focus:ring-2 focus:ring-[#00cc99] text-sm sm:text-base">
       </div>
       <div>
-        <label class="block font-semibold mb-1 text-[#003366]">Monthly Claim Volume</label>
-        <input type="number" placeholder="e.g. 120" class="w-full border border-gray-300 rounded p-3 focus:outline-none focus:ring-2 focus:ring-[#00cc99]">
+        <label class="block font-semibold mb-1 text-[#003366] text-sm sm:text-base">Monthly Claim Volume</label>
+        <input type="number" placeholder="e.g. 120" class="w-full border border-gray-300 rounded p-3 focus:outline-none focus:ring-2 focus:ring-[#00cc99] text-sm sm:text-base">
       </div>
       <div>
-        <label class="block font-semibold mb-1 text-[#003366]">Current Billing Setup (Optional)</label>
-        <input type="text" placeholder="In-house, 3rd-party, etc." class="w-full border border-gray-300 rounded p-3 focus:outline-none focus:ring-2 focus:ring-[#00cc99]">
+        <label class="block font-semibold mb-1 text-[#003366] text-sm sm:text-base">Current Billing Setup (Optional)</label>
+        <input type="text" placeholder="In-house, 3rd-party, etc." class="w-full border border-gray-300 rounded p-3 focus:outline-none focus:ring-2 focus:ring-[#00cc99] text-sm sm:text-base">
       </div>
       <div>
-        <label class="block font-semibold mb-1 text-[#003366]">Your Email</label>
-        <input type="email" placeholder="you@agency.com" class="w-full border border-gray-300 rounded p-3 focus:outline-none focus:ring-2 focus:ring-[#00cc99]" required>
+        <label class="block font-semibold mb-1 text-[#003366] text-sm sm:text-base">Your Email</label>
+        <input type="email" placeholder="you@agency.com" class="w-full border border-gray-300 rounded p-3 focus:outline-none focus:ring-2 focus:ring-[#00cc99] text-sm sm:text-base" required>
       </div>
       <div class="text-center">
-        <button type="submit" class="mt-4 w-full bg-[#00cc99] hover:bg-[#009977] text-white py-3 px-6 rounded-lg font-semibold transition">
+        <button type="submit" class="mt-4 w-full bg-[#00cc99] hover:bg-[#009977] text-white py-3 px-6 rounded-lg font-semibold transition text-sm sm:text-base">
           Send My Quote
         </button>
       </div>
-      <p class="text-sm text-center text-gray-500 mt-2">We’ll respond within 1 business day. 100% confidential.</p>
+      <p class="text-xs sm:text-sm text-center text-gray-500 mt-2">We'll respond within 1 business day. 100% confidential.</p>
     </form>
   </div>
 </section>
 
   <!-- 💬 CTA -->
-  <section class="py-20 px-6 bg-[#003366] text-white text-center">
-    <h3 class="text-3xl font-bold mb-4 fade-up">Want to See How We’d Improve Your Billing?</h3>
-    <p class="text-lg mb-6 max-w-xl mx-auto fade-up">We’ll review 10 of your claims for free. No pressure. Just proof.</p>
-    <a href="free-audit.html" class="bg-[#00cc99] px-6 py-3 text-lg font-semibold rounded hover:bg-[#009977] transition">Get My Free Audit</a>
+  <section class="py-12 sm:py-20 px-4 sm:px-6 bg-[#003366] text-white text-center">
+    <h3 class="text-2xl sm:text-3xl font-bold mb-4 fade-up">Want to See How We'd Improve Your Billing?</h3>
+    <p class="text-base sm:text-lg mb-6 max-w-xl mx-auto fade-up px-4">We'll review 10 of your claims for free. No pressure. Just proof.</p>
+    <a href="free-audit.html" class="bg-[#00cc99] px-6 py-3 text-base sm:text-lg font-semibold rounded hover:bg-[#009977] transition">Get My Free Audit</a>
   </section>
 
   <!-- 🔻 Footer -->
-  <footer class="bg-gray-100 text-center text-sm py-6 mt-10 text-gray-600">
+  <footer class="bg-gray-100 text-center text-xs sm:text-sm py-6 mt-10 text-gray-600">
     &copy; 2025 FP Billing Services. All rights reserved.
   </footer>
+
+  <!-- Mobile menu script -->
+  <script>
+    document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+      const mobileMenu = document.getElementById('mobile-menu');
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
 
 </body>
 </html>
