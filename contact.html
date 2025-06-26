@@ -1,30 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Contact Us - FP Billing</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>Contact Us - FP Billing & Consulting</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
-<body>
-<header>
-  <h1>Contact Us</h1>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="free-audit.html">Free Audit</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
-<main>
-  <section>
-    <p>Email: support@fpbilling.com</p>
-    <p>Phone: (555) 123-4567</p>
-    <p>Office: Moreno Valley, CA</p>
+<body class="bg-white text-gray-800 font-sans">
+
+  <!-- 🌐 Navigation -->
+  <header class="shadow-md fixed top-0 left-0 w-full z-50 bg-white">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="text-2xl font-bold text-[#003366] tracking-wide">FP Billing</div>
+      <nav class="space-x-6 hidden md:flex text-[#003366] font-medium">
+        <a href="index.html" class="hover:text-[#00cc99] transition">Home</a>
+        <a href="about.html" class="hover:text-[#00cc99] transition">About</a>
+        <a href="services.html" class="hover:text-[#00cc99] transition">Services</a>
+        <a href="free-audit.html" class="hover:text-[#00cc99] transition">Free Audit</a>
+        <a href="contact.html" class="hover:text-[#00cc99] transition">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 💬 Hero Section -->
+  <section class="bg-gradient-to-r from-[#e6f0f9] to-white py-32 px-6 text-center mt-20">
+    <h2 class="text-4xl md:text-5xl font-bold text-[#003366] mb-4">Let’s Connect</h2>
+    <p class="max-w-2xl mx-auto text-lg text-gray-700">Whether you're ready to get started or just have questions, we're here to help. Reach out today and let’s simplify your billing process.</p>
   </section>
-</main>
-<footer>
-  <p>&copy; 2025 FP Billing. All rights reserved.</p>
-</footer>
+
+  <!-- 📬 Contact Form Section -->
+  <main class="max-w-4xl mx-auto px-6 py-16">
+    <form action="#" method="POST" class="bg-white shadow-md rounded-lg p-8 space-y-6">
+      <div>
+        <label for="name" class="block font-semibold text-[#003366] mb-1">Full Name</label>
+        <input type="text" id="name" name="name" required class="w-full border border-gray-300 rounded px-4 py-2" />
+      </div>
+      <div>
+        <label for="email" class="block font-semibold text-[#003366] mb-1">Email Address</label>
+        <input type="email" id="email" name="email" required class="w-full border border-gray-300 rounded px-4 py-2" />
+      </div>
+      <div>
+        <label for="phone" class="block font-semibold text-[#003366] mb-1">Phone Number</label>
+        <input type="tel" id="phone" name="phone" class="w-full border border-gray-300 rounded px-4 py-2" />
+      </div>
+      <div>
+        <label for="message" class="block font-semibold text-[#003366] mb-1">Message</label>
+        <textarea id="message" name="message" rows="5" class="w-full border border-gray-300 rounded px-4 py-2"></textarea>
+      </div>
+      <button type="submit" class="bg-[#00cc99] hover:bg-[#009977] text-white font-semibold px-6 py-2 rounded shadow-md">Send Message</button>
+    </form>
+
+    <!-- 🏢 Office Info -->
+    <div class="mt-16 text-center text-gray-700">
+      <h3 class="text-2xl font-bold text-[#003366] mb-2">Office Information</h3>
+      <p>Email: <a href="mailto:info@fpbillingservices.com" class="text-[#00cc99]">info@fpbillingservices.com</a></p>
+      <p>Phone: 951-547-1670 ext 101</p>
+      <p>Mailing Address: PO BOX 7832, Moreno Valley, CA 92555</p>
+    </div>
+  </main>
+
+  <!-- 🦶 Footer -->
+  <footer class="bg-gray-100 text-center text-sm py-6 mt-10 text-gray-600">
+    <p>FP Billing & Consulting</p>
+    <p>&copy; 2025 FP Billing & Consulting. All rights reserved.</p>
+  </footer>
 </body>
 </html>
