@@ -99,9 +99,38 @@
 
   <!-- Mobile menu script -->
   <script>
+    // Mobile menu script with improved functionality
     document.getElementById('mobile-menu-btn').addEventListener('click', function() {
       const mobileMenu = document.getElementById('mobile-menu');
-      mobileMenu.classList.toggle('hidden');
+      const isOpen = mobileMenu.classList.contains('show');
+      
+      if (isOpen) {
+        mobileMenu.classList.remove('show');
+        mobileMenu.classList.add('hidden');
+      } else {
+        mobileMenu.classList.remove('hidden');
+        mobileMenu.classList.add('show');
+      }
+    });
+
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', function(event) {
+      const mobileMenu = document.getElementById('mobile-menu');
+      const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+      
+      if (!mobileMenu.contains(event.target) && !mobileMenuBtn.contains(event.target)) {
+        mobileMenu.classList.remove('show');
+        mobileMenu.classList.add('hidden');
+      }
+    });
+
+    // Close mobile menu when window is resized to desktop
+    window.addEventListener('resize', function() {
+      if (window.innerWidth >= 768) {
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenu.classList.remove('show');
+        mobileMenu.classList.add('hidden');
+      }
     });
   </script>
 

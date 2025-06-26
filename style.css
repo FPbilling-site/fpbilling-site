@@ -26,12 +26,66 @@ header {
   background-color: #fff;
   color: #003366;
   text-align: center;
-  padding: 10px 20px; /* reduce top/bottom padding */
-  position: sticky;
+  padding: 8px 20px; /* reduced padding for mobile */
+  position: fixed; /* changed from sticky to fixed for better control */
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
+/* Header container for better mobile control */
+header .max-w-7xl {
+  min-height: 48px; /* ensure consistent height */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo/brand styling */
+header .text-xl {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+header .text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+/* Mobile menu button styling */
+#mobile-menu-btn {
+  padding: 4px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+#mobile-menu-btn:hover {
+  background-color: rgba(0, 51, 102, 0.1);
+}
+
+/* Mobile menu styling */
+#mobile-menu {
+  border-top: 1px solid #e5e7eb;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+#mobile-menu nav {
+  padding: 8px 0;
+}
+
+#mobile-menu a {
+  padding: 8px 16px;
+  display: block;
+  border-radius: 4px;
+  margin: 2px 8px;
+  transition: background-color 0.2s ease;
+}
+
+#mobile-menu a:hover {
+  background-color: rgba(0, 204, 153, 0.1);
+}
 
 nav a {
   margin: 0 15px;
@@ -188,33 +242,87 @@ footer {
   transform: scale(1.4);
 }
 
-
-
-
 /* 📱 Mobile Responsiveness */
 @media (max-width: 768px) {
-  nav {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    margin-top: 10px;
+  /* Header optimizations for mobile */
+  header {
+    padding: 6px 16px; /* further reduced padding for mobile */
   }
-
-  nav a {
-    margin: 0;
+  
+  header .max-w-7xl {
+    min-height: 44px; /* smaller height for mobile */
   }
-
+  
+  /* Ensure hero sections have proper top spacing */
+  section.bg-\[#003366\]:first-of-type {
+    padding-top: 60px; /* account for fixed header */
+  }
+  
+  /* Mobile menu optimizations */
+  #mobile-menu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+  
+  #mobile-menu.show {
+    max-height: 200px; /* enough space for menu items */
+  }
+  
+  #mobile-menu nav {
+    padding: 4px 0;
+  }
+  
+  #mobile-menu a {
+    padding: 10px 16px;
+    font-size: 0.875rem;
+  }
+  
+  /* Impact card mobile adjustments */
   .impact-card {
     font-size: 16px;
     padding: 25px;
   }
 
+  /* CTA button mobile adjustments */
   .cta-button {
     padding: 10px 20px;
     font-size: 16px;
   }
 
+  /* Typewriter mobile adjustments */
   .typewriter {
     font-size: 1.5rem;
+  }
+  
+  /* Impact section mobile adjustments */
+  .impact-section {
+    padding: 60px 16px;
+  }
+  
+  .impact-title {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+}
+
+/* 📱 Small mobile devices */
+@media (max-width: 480px) {
+  header {
+    padding: 4px 12px;
+  }
+  
+  header .max-w-7xl {
+    min-height: 40px;
+  }
+  
+  /* Ensure hero sections have proper top spacing on very small screens */
+  section.bg-\[#003366\]:first-of-type {
+    padding-top: 56px;
+  }
+  
+  #mobile-menu a {
+    padding: 8px 12px;
+    font-size: 0.875rem;
   }
 }
