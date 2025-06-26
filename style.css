@@ -131,7 +131,7 @@ footer {
 .typewriter-text {
   overflow: hidden;
   border-right: 0.15em solid #00cc99;
-  white-space: nowrap;
+  white-space: normal; /* Changed from nowrap to allow wrapping on mobile */
   margin: 0 auto 20px;
   letter-spacing: 0.05em;
   animation: typing 2.5s steps(30, end) forwards;
@@ -139,6 +139,9 @@ footer {
   color: #00cc99;
   text-align: center;
   position: relative;
+  line-height: 1.2; /* Added for better mobile readability */
+  word-wrap: break-word; /* Ensure long words wrap properly */
+  hyphens: auto; /* Enable automatic hyphenation */
 }
 
 /* Add the blinking cursor separately */
@@ -255,7 +258,15 @@ footer {
   
   /* Ensure hero sections have proper top spacing */
   section.bg-\[#003366\]:first-of-type {
-    padding-top: 60px; /* account for fixed header */
+    padding-top: 80px !important; /* increased padding to prevent text cutoff */
+  }
+  
+  /* Hero text optimizations for mobile */
+  .typewriter-text {
+    font-size: 1.5rem; /* smaller font size for mobile */
+    line-height: 1.3; /* better line height for mobile */
+    margin-bottom: 16px;
+    padding: 0 8px; /* add some horizontal padding */
   }
   
   /* Mobile menu optimizations */
@@ -318,7 +329,14 @@ footer {
   
   /* Ensure hero sections have proper top spacing on very small screens */
   section.bg-\[#003366\]:first-of-type {
-    padding-top: 56px;
+    padding-top: 76px !important; /* slightly less padding for very small screens */
+  }
+  
+  /* Hero text optimizations for very small screens */
+  .typewriter-text {
+    font-size: 1.25rem; /* even smaller font size for very small screens */
+    line-height: 1.4;
+    padding: 0 4px;
   }
   
   #mobile-menu a {
