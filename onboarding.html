@@ -29,93 +29,123 @@
     <section class="py-16 px-4 md:px-12">
       <div class="max-w-3xl mx-auto">
         <h1 class="text-3xl md:text-4xl font-bold text-center mb-6">Effortless Provider Onboarding</h1>
-        <p class="text-center text-gray-600 mb-10">Upload your documents and we’ll handle the rest.</p>
+        <p class="text-center text-gray-600 mb-10">Upload your documents and we'll handle the rest.</p>
 
-        <form action="https://formspree.io/f/mgvyrvva" method="POST" enctype="multipart/form-data" class="space-y-6">
-  <div>
-    <label class="block text-sm font-medium">Legal Business Name</label>
-    <input type="text" name="Business Name" required class="w-full mt-1 p-3 border border-gray-300 rounded-lg" />
-  </div>
+        <form name="onboarding" method="POST" data-netlify="true" enctype="multipart/form-data" action="/success.html" class="space-y-6">
+          <input type="hidden" name="form-name" value="onboarding" />
+          
+          <div>
+            <label class="block text-sm font-medium">Legal Business Name</label>
+            <input type="text" name="Business Name" required class="w-full mt-1 p-3 border border-gray-300 rounded-lg" />
+          </div>
 
-  <div class="grid md:grid-cols-2 gap-6">
-    <div>
-      <label class="block text-sm font-medium">Contact Person</label>
-      <input type="text" name="Contact Name" required class="w-full mt-1 p-3 border border-gray-300 rounded-lg" />
-    </div>
-    <div>
-      <label class="block text-sm font-medium">Email</label>
-      <input type="email" name="Email" required class="w-full mt-1 p-3 border border-gray-300 rounded-lg" />
-    </div>
-  </div>
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-sm font-medium">Contact Person</label>
+              <input type="text" name="Contact Name" required class="w-full mt-1 p-3 border border-gray-300 rounded-lg" />
+            </div>
+            <div>
+              <label class="block text-sm font-medium">Email</label>
+              <input type="email" name="Email" required class="w-full mt-1 p-3 border border-gray-300 rounded-lg" />
+            </div>
+          </div>
 
-  <div>
-    <label class="block text-sm font-medium">Phone Number</label>
-    <input type="text" name="Phone Number" required class="w-full mt-1 p-3 border border-gray-300 rounded-lg" />
-  </div>
+          <div>
+            <label class="block text-sm font-medium">Phone Number</label>
+            <input type="text" name="Phone Number" required class="w-full mt-1 p-3 border border-gray-300 rounded-lg" />
+          </div>
 
-  <div class="grid md:grid-cols-2 gap-6">
-<div>
-  <label class="block text-sm font-medium">EIN</label>
-  <input type="text" name="EIN" required placeholder="Required" class="w-full mt-1 p-3 border border-gray-300 rounded-lg" />
-</div>
-    <div>
-      <label class="block text-sm font-medium">NPI (Optional)</label>
-      <input type="text" name="NPI" class="w-full mt-1 p-3 border border-gray-300 rounded-lg" />
-    </div>
-  </div>
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-sm font-medium">EIN (Tax ID)</label>
+              <input type="text" name="EIN" required class="w-full mt-1 p-3 border border-gray-300 rounded-lg" placeholder="XX-XXXXXXX" />
+            </div>
+            <div>
+              <label class="block text-sm font-medium">NPI (National Provider Identifier)</label>
+              <input type="text" name="NPI" class="w-full mt-1 p-3 border border-gray-300 rounded-lg" placeholder="Optional" />
+            </div>
+          </div>
 
-  <div>
-    <label class="inline-flex items-center">
-      <input type="checkbox" name="Need NPI Help" class="mr-2">
-      <span class="text-sm text-gray-700">If you do not have an NPI, check this box and we can help you obtain one.</span>
-    </label>
-  </div>
+          <div class="mb-6">
+            <label class="inline-flex items-center">
+              <input type="checkbox" name="Need NPI Help" class="mr-2">
+              <span class="text-sm text-gray-700">If you do not have an NPI, check this box and we can help you obtain one.</span>
+            </label>
+          </div>
 
-  <div class="grid md:grid-cols-2 gap-6">
-    <div>
-      <label class="block text-sm font-medium">Upload W-9</label>
-      <input type="file" name="W9 Upload" required class="w-full mt-1 p-3 border border-gray-300 rounded-lg bg-white" />
-    </div>
-    <div>
-      <label class="block text-sm font-medium">Upload Voided Check</label>
-      <input type="file" name="Voided Check Upload" required class="w-full mt-1 p-3 border border-gray-300 rounded-lg bg-white" />
-    </div>
-  </div>
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-sm font-medium">Upload W-9</label>
+              <input type="file" name="w9_upload" required class="w-full mt-1 p-3 border border-gray-300 rounded-lg bg-white" />
+            </div>
+            <div>
+              <label class="block text-sm font-medium">Upload Voided Check</label>
+              <input type="file" name="voided_check_upload" required class="w-full mt-1 p-3 border border-gray-300 rounded-lg bg-white" />
+            </div>
+          </div>
 
-  <div>
-    <label class="block text-sm font-medium">Pay-To Address</label>
-    <textarea name="Pay-To Address" rows="3" required class="w-full mt-1 p-3 border border-gray-300 rounded-lg"></textarea>
-  </div>
+          <div>
+            <label class="block text-sm font-medium">Pay-To Address</label>
+            <textarea name="Pay-To Address" rows="3" required class="w-full mt-1 p-3 border border-gray-300 rounded-lg"></textarea>
+          </div>
 
-  <button type="submit" class="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-3 rounded-lg transition">
-    Submit Onboarding
-  </button>
-</form>
-
+          <button type="submit" class="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-3 rounded-lg transition">
+            Submit Onboarding
+          </button>
+        </form>
 
         <p class="text-center text-sm text-gray-500 mt-6">We'll reach out within 3-5 business day to finalize your setup.</p>
       </div>
     </section>
   </div>
 
+  <!-- 🎉 Success Toast -->
+  <div id="successToast" class="fixed bottom-4 right-4 bg-green-600 text-white px-6 py-4 rounded-lg shadow-lg transform translate-y-full opacity-0 transition-all duration-500 ease-in-out z-50 flex items-center space-x-3">
+    <div class="animate-spin rounded-full h-5 w-5 border-2 border-white border-t-transparent"></div>
+    <span class="font-medium">Form submitted successfully!</span>
+  </div>
+
   <!-- 🔐 JS Password Logic -->
-<script>
-  const PASSWORD = 'fpsecure2024';
+  <script>
+    const PASSWORD = 'fpsecure2024';
 
-  function checkPassword() {
-    const input = document.getElementById('passwordInput').value;
-    const errorMsg = document.getElementById('errorMsg');
-
-    if (input === PASSWORD) {
-      document.getElementById('passwordModal').style.display = 'none';
+    function checkPassword() {
+      const input = document.getElementById('passwordInput').value.trim();
+      const errorMsg = document.getElementById('errorMsg');
       const mainContent = document.getElementById('mainContent');
-      mainContent.classList.remove('blurred');
-      mainContent.classList.remove('hidden');
-    } else {
-      errorMsg.classList.remove('hidden');
+
+      if (input === PASSWORD) {
+        document.getElementById('passwordModal').style.display = 'none';
+        mainContent.classList.remove('blurred');
+        mainContent.classList.remove('hidden');
+        mainContent.removeAttribute('x-cloak');
+      } else {
+        errorMsg.classList.remove('hidden');
+      }
     }
-  }
-</script>
+
+    // Success Toast Logic
+    function showSuccessToast() {
+      const toast = document.getElementById('successToast');
+      if (toast) {
+        // Show toast
+        toast.classList.remove('translate-y-full', 'opacity-0');
+        toast.classList.add('translate-y-0', 'opacity-100');
+        
+        // Hide after 6 seconds
+        setTimeout(() => {
+          toast.classList.add('translate-y-full', 'opacity-0');
+          toast.classList.remove('translate-y-0', 'opacity-100');
+        }, 6000);
+      }
+    }
+
+    // Check for success parameter on page load
+    if (window.location.search.includes('success=true')) {
+      // Small delay to ensure DOM is ready
+      setTimeout(showSuccessToast, 100);
+    }
+  </script>
 
 </body>
 </html>
