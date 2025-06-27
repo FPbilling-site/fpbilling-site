@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Provider Onboarding | FP Billing</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    [x-cloak] { display: none !important; }
+    .blurred { filter: blur(10px); pointer-events: none; }
+    .modal-overlay { background: rgba(0, 0, 0, 0.6); backdrop-filter: blur(6px); }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- 🔐 Password Modal -->
+  <div id="passwordModal" class="fixed inset-0 z-50 flex items-center justify-center modal-overlay">
+    <div class="bg-white p-6 rounded-lg shadow-xl w-full max-w-md text-center">
+      <h2 class="text-2xl font-semibold mb-4">Secure Access</h2>
+      <p class="text-gray-600 mb-4">Please enter your onboarding password:</p>
+      <input type="password" id="passwordInput" class="w-full p-3 border border-gray-300 rounded mb-4" placeholder="Enter password..." />
+      <button onclick="checkPassword()" class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition">Unlock</button>
+      <p id="errorMsg" class="text-red-500 mt-3 hidden">Incorrect password. Try again.</p>
+    </div>
+  </div>
+
+  <!-- 🔒 Blurred Main Content -->
+  <div id="mainContent" class="blurred" x-cloak>
+    <section class="py-16 px-4 md:px-12">
+      <div class="max-w-3xl mx-auto">
+        <h1 class="text-3xl md:text-4xl font-bold text-center mb-6">Effortless Provider Onboarding</h1>
+        <p class="text-center text-gray-600 mb-10">Upload your documents and we’ll handle the rest.</p>
+
+        <form action="https://formspree.io/f/mgvyrvva" method="POST" enctype="multipart/form-data" class="space-y-6">
+          <div>
+            <label class="block text-sm font-medium">Legal Business Name</label>
+            <input type="text" name="Business Name" required class="w-full mt-1 p-3 border border-gray-300 rounded-lg" />
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-sm font-medium">Contact Person</label>
+              <input type="text" name="Contact Name" required class="w-full mt-1 p-3 border border-gray-300 rounded-lg" />
+            </div>
+            <div>
+              <label class="block text-sm font-medium">Email</label>
+              <input type="email" name="Email" required class="w-full mt-1 p-3 border border-gray-300 rounded-lg" />
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-sm font-medium">Phone Number</label>
+            <input type="text" name="Phone Number" required class="w-full mt-1 p-3 border border-gray-300 rounded-lg" />
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-sm font-medium">Upload W-9</label>
+              <input type="file" name="W9 Upload" required class="w-full mt-1 p-3 border border-gray-300 rounded-lg bg-white" />
+            </div>
+            <div>
+              <label class="block text-sm font-medium">Upload Voided Check</label>
+              <input type="file" name="Voided Check Upload" required class="w-full mt-1 p-3 border border-gray-300 rounded-lg bg-white" />
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-sm font-medium">Pay-To Address</label>
+            <textarea name="Pay-To Address" rows="3" required class="w-full mt-1 p-3 border border-gray-300 rounded-lg"></textarea>
+          </div>
+
+          <button type="submit" class="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-3 rounded-lg transition">
+            Submit Onboarding
+          </button>
+        </form>
+
+        <p class="text-center text-sm text-gray-500 mt-6">We'll reach out within 1 business day to finalize your setup.</p>
+      </div>
+    </section>
+  </div>
+
+  <!-- 🔐 JS Password Logic -->
+  <script>
+    const PASSWORD = 'fpsecure2024';
+
+    function checkPassword() {
+      const input = document.getElementById('passwordInput').value;
+      const errorMsg = document.getElementById('errorMsg');
+
+      if (input === PASSWORD) {
+        document.getElementById('passwordModal').style.display = 'none';
+        document.getElementById('mainContent').classList.remove('blurred');
+      } else {
+        errorMsg.classList.remove('hidden');
+      }
+    }
+  </script>
+
+</body>
+</html>
