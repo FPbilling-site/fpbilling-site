@@ -25,7 +25,7 @@
   </div>
 
   <!-- 🔒 Blurred Main Content -->
-  <div id="mainContent" class="blurred" x-cloak>
+  <div id="mainContent" class="blurred hidden">
     <section class="py-16 px-4 md:px-12">
       <div class="max-w-3xl mx-auto">
         <h1 class="text-3xl md:text-4xl font-bold text-center mb-6">Effortless Provider Onboarding</h1>
@@ -80,21 +80,23 @@
   </div>
 
   <!-- 🔐 JS Password Logic -->
-  <script>
-    const PASSWORD = 'fpsecure2024';
+<script>
+  const PASSWORD = 'fpsecure2024';
 
-    function checkPassword() {
-      const input = document.getElementById('passwordInput').value;
-      const errorMsg = document.getElementById('errorMsg');
+  function checkPassword() {
+    const input = document.getElementById('passwordInput').value;
+    const errorMsg = document.getElementById('errorMsg');
 
-      if (input === PASSWORD) {
-        document.getElementById('passwordModal').style.display = 'none';
-        document.getElementById('mainContent').classList.remove('blurred');
-      } else {
-        errorMsg.classList.remove('hidden');
-      }
+    if (input === PASSWORD) {
+      document.getElementById('passwordModal').style.display = 'none';
+      const mainContent = document.getElementById('mainContent');
+      mainContent.classList.remove('blurred');
+      mainContent.classList.remove('hidden');
+    } else {
+      errorMsg.classList.remove('hidden');
     }
-  </script>
+  }
+</script>
 
 </body>
 </html>
